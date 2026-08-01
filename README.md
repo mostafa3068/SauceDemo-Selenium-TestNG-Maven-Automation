@@ -9,6 +9,7 @@ The framework is designed using Selenium WebDriver, TestNG, Maven, Page Object M
 
 ## 🎥 Project Demo
 
+https://github.com/user-attachments/assets/53bc02fc-a43f-4c78-a1b5-daa03e644b52
 
 ---
 
