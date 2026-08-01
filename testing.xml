@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SauceDemo Master Suite" parallel="false">
+
+      <listeners>
+          <listener class-name="mostafa.qa.listeners.ExtentTestNGListener"/>
+      </listeners>
+
+
+      <!-- Run only smoke tests
+      <test name="Smoke Suite">
+          <groups>
+              <run>
+                  <include name="smoke"/>
+              </run>
+          </groups>
+          <packages>
+              <package name="tests"/>
+          </packages>
+      </test>
+      -->
+
+    <!-- Run only regression tests
+    <test name="Regression Suite">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests"/>
+        </packages>
+    </test>
+
+    -->
+
+    <!-- -->
+        <test name="Full Suite">
+            <packages>
+                <package name="tests"/>
+            </packages>
+        </test>
+
+</suite>
+        <!-- Run all tests -->
