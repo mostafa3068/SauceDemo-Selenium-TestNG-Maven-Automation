@@ -263,14 +263,7 @@ Suace_Demo_Automation
 │               ├── InventoryTest.java
 │               ├── LoginTest.java
 │               └── TestData.java
-│
-├── performance
-│   └── SauceDemo Login Load Test.jmx
-├── reports
-│   └── screenshots
-├── Jenkinsfile
-├── ParallelTesting.xml
-├── oldtesting.xml
+│ 
 ├── pom.xml
 ├── testing.xml
 └── README.md
