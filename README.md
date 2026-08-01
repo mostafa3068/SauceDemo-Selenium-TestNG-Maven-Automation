@@ -8,9 +8,7 @@ The framework is designed using Selenium WebDriver, TestNG, Maven, Page Object M
 ---
 
 ## 🎥 Project Demo
-A project demo video is not currently included in this repository.
 
-After running the tests, you can review the generated HTML execution report under the `reports` folder.
 
 ---
 
@@ -190,16 +188,6 @@ mvn clean test -Dbrowser.name=firefox
 ### Run with a Custom Base URL
 ```bash
 mvn clean test -Dapp.baseUrl=https://www.saucedemo.com/
-```
-
-### Run Parallel Suite
-```bash
-mvn clean test -Dsuite=ParallelTesting.xml -Dbrowser.headless=true -Dci.environment=true
-```
-
-### Run a Specific Test Class
-```bash
-mvn test -Dtest=InventoryTest
 ```
 
 ### Run Smoke Tests
