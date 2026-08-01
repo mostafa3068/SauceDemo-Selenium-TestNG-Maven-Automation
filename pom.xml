@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+         <!-- groupId →  project’s organization or domain
+            artifactId → The project name
+            version → Current version of your project (1.0-SNAPSHOT means it’s under development). -->
+         <groupId>mostafa.qa</groupId>
+         <artifactId>Suace_Demo_Automation</artifactId>
+         <version>1.0-SNAPSHOT</version>
+
+
+        <properties>
+            <!-- Use Java 21 LTS for stable local and CI execution -->
+            <maven.compiler.source>21</maven.compiler.source>
+            <maven.compiler.target>21</maven.compiler.target>
+
+            <!-- Centralized dependency versions -->
+            <selenium.version>4.39.0</selenium.version> <!-- latest version at the time of work   -->
+            <testng.version>7.11.0</testng.version> <!-- latest version at the time of work   -->
+            <webdrivermanager.version>6.3.3</webdrivermanager.version>     <!-- latest version at the time of work   -->
+            <extentreports.version>4.1.7</extentreports.version>
+            <!-- Default TestNG suite can be overridden with -Dsuite=ParallelTesting.xml -->
+            <suite>testing.xml</suite>
+
+
+        </properties>
+
+        <dependencies>
+            <!-- Selenium WebDriver -->
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+
+            <!-- TestNG -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+
+            </dependency>
+
+            <!-- WebDriverManager -->
+            <dependency>
+                <groupId>io.github.bonigarcia</groupId>
+                <artifactId>webdrivermanager</artifactId>
+                <version>${webdrivermanager.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.aventstack</groupId>
+                <artifactId>extentreports</artifactId>
+                <version>${extentreports.version}</version>
+            </dependency>
+
+
+
+        </dependencies>
+
+
+    <build>
+            <plugins>
+                <!-- Surefire plugin to run TestNG -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.2.5</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>${suite}</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+
+
+
+</project>
