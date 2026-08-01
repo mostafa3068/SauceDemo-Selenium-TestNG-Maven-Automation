@@ -51,8 +51,6 @@ This project was created to practice and demonstrate real-world QA automation en
 - WebDriverManager
 - ExtentReports
 - PageFactory
-- Jenkins Pipeline
-- JMeter performance test file
 - Git / GitHub
 
 ---
@@ -71,10 +69,8 @@ This framework supports:
 - Configurable application base URL
 - Smoke and regression execution using TestNG groups
 - TestNG suite configuration
-- Parallel suite configuration through `ParallelTesting.xml`
 - ExtentReports HTML reporting
 - Screenshot capture on test failure
-- Jenkins pipeline support
 - Centralized test data through `TestData`
 
 ---
@@ -269,12 +265,8 @@ Suace_Demo_Automation
 | `src/main/java/mostafa/qa/listeners` | Handles TestNG execution events, reporting, and screenshots |
 | `src/main/java/mostafa/qa/utils` | Stores reusable utility classes such as report management |
 | `src/test/java/tests` | Stores TestNG test classes and centralized test data |
-| `performance` | Stores JMeter performance testing files |
 | `reports` | Stores generated ExtentReports HTML files and screenshots |
 | `testing.xml` | Default TestNG suite configuration |
-| `ParallelTesting.xml` | Parallel TestNG suite configuration |
-| `oldtesting.xml` | Legacy TestNG suite configuration |
-| `Jenkinsfile` | Jenkins CI/CD pipeline configuration |
 | `pom.xml` | Maven dependencies, Java version, and Surefire test execution configuration |
 
 ---
