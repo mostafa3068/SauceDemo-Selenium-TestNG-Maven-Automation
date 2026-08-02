@@ -150,7 +150,7 @@ You can override the browser, base URL, and headless mode from the Maven command
 
 ## 📦 Clone the Repository
 ```bash
-git clone <repository-url>
+git clone <https://github.com/mostafa3068/SauceDemo-Selenium-TestNG-Maven-Automation>
 cd Suace_Demo_Automation
 ```
 
